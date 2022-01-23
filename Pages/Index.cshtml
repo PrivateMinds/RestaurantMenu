@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<table>
+    <tr>
+        <td>
+            <div class="salad"><input id="chkSalad" type="checkbox" /> Salad</div>
+
+            <div class="showsalads" style="margin-left:3em;display:none">
+
+                <div id="chkSantaFe"><input type="checkbox" /> Santa Fe</div>
+                <div id="divGreek"><input id="chkGreek" type="checkbox"  /> Greek</div>
+                <div id="chkAsian"><input type="checkbox" /> Asian</div>
+            </div>
+
+            <div class="showsuggestion" style="color: blue; margin-top: 1em; display: none; margin-left: 3em ">
+                    You might also want: 
+            </div>
+
+             <div class="dressing" style="margin-top: .4em; margin-left: 3em; display: none;"><input id="chkdressing" type="checkbox" /> Dressing</div>
+           
+
+                <div class="dressingsopt" style="margin-left:6em;display:none">
+                    <div id="Italian"><input type="checkbox" /> Italian</div>
+                    <div id="divBlueCheese"><input id="chkBlueCheese" type="checkbox"  /> Blue Cheese</div>
+                    <div id="Ranch"><input type="checkbox" /> Ranch</div>
+                </div>
+
+                <div class="showbread" style="display: none; margin-left: 3em;"><input type="checkbox" /> Bread</div>
+        
+
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+          
+            <input id="Entree" type="checkbox" /> Entree
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <div class="Soups"><input type="checkbox" /> Soup</div>
+
+            <div class="showsoups" style="margin-left:3em;display:none">
+                <div id="MineStrone"><input id="chkMineStrone" type="checkbox" /> MineStrone</div>
+                <div id="HotandSour"><input type="checkbox" /> Hot and Sour</div>
+                <div id="Miso"><input type="checkbox" /> Miso</div>
+            </div>
+
+            <div class="Othersuggestions" style="display:none">
+                <span  style="color:blue">You might also want: </span>
+
+                <div><input type="checkbox" /> Bread</div>
+            </div>
+
+        </td>
+    </tr>
+</table>
+
+@section scripts
+{
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+}
